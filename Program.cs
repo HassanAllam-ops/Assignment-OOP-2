@@ -31,17 +31,60 @@
     #endregion
 
     #region Struct Q3
-    internal struct Person
-    {
-        public string Name;
-        public int Age;
+    //internal struct Person
+    //{
+    //    public string Name;
+    //    public int Age;
+    //
+    //    public Person (string name , int age)
+    //    {
+    //        Name = name;
+    //        Age = age;
+    //    }
+    //}
+    #endregion
 
-        public Person (string name , int age)
+    #region Struct Q4
+    internal struct Rectangle
+    {
+        private double width;
+        private double height;
+
+        public double Width
         {
-            Name = name;
-            Age = age;
+            get { return width; }
+            set
+            {
+                if (width >= 0)
+                    width = value;
+                else
+                    Console.WriteLine("Error : Width Cannot Be Negative");
+            }
         }
+        public double Height
+        {
+            get { return height; }
+            set
+            {
+                if (height >= 0)
+                    height = value;
+                else
+                    Console.WriteLine("Error : Hight Cannot Be Negative");
+            }
+        }
+        public double Area => width * height;
+        public void DisplayInfo()
+        {
+            Console.WriteLine($"Rectangle Dimensions: Width = {Width}, Height = {Height}");
+            Console.WriteLine($"Area : {Area}");
+        }
+
+
     }
+
+
+
+
     #endregion
     internal class Program
     {
@@ -102,6 +145,14 @@
             //}
             //
             //Console.WriteLine($"The Oldest Person Is : {Oldest.Name} , With Age = {Oldest.Age}");
+            #endregion
+
+            #region Q4
+            //Rectangle rectangle = new Rectangle();
+            //rectangle.Width = 15;
+            //rectangle.Height = 13.5;
+            //
+            //rectangle.DisplayInfo();
             #endregion
         }
     }
