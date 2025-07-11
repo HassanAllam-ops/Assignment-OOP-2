@@ -1,5 +1,6 @@
 ﻿namespace Assignment_OOP_2
 {
+    #region Question Structs
     #region Struct Q1
     //internal struct Person
     //{
@@ -45,46 +46,41 @@
     #endregion
 
     #region Struct Q4
-    internal struct Rectangle
-    {
-        private double width;
-        private double height;
-
-        public double Width
-        {
-            get { return width; }
-            set
-            {
-                if (width >= 0)
-                    width = value;
-                else
-                    Console.WriteLine("Error : Width Cannot Be Negative");
-            }
-        }
-        public double Height
-        {
-            get { return height; }
-            set
-            {
-                if (height >= 0)
-                    height = value;
-                else
-                    Console.WriteLine("Error : Hight Cannot Be Negative");
-            }
-        }
-        public double Area => width * height;
-        public void DisplayInfo()
-        {
-            Console.WriteLine($"Rectangle Dimensions: Width = {Width}, Height = {Height}");
-            Console.WriteLine($"Area : {Area}");
-        }
-
-
-    }
-
-
-
-
+    //internal struct Rectangle
+    //{
+    //    private double width;
+    //    private double height;
+    //
+    //    public double Width
+    //    {
+    //        get { return width; }
+    //        set
+    //        {
+    //            if (width >= 0)
+    //                width = value;
+    //            else
+    //                Console.WriteLine("Error : Width Cannot Be Negative");
+    //        }
+    //    }
+    //    public double Height
+    //    {
+    //        get { return height; }
+    //        set
+    //        {
+    //            if (height >= 0)
+    //                height = value;
+    //            else
+    //                Console.WriteLine("Error : Hight Cannot Be Negative");
+    //        }
+    //    }
+    //    public double Area => width * height;
+    //    public void DisplayInfo()
+    //    {
+    //        Console.WriteLine($"Rectangle Dimensions: Width = {Width}, Height = {Height}");
+    //        Console.WriteLine($"Area : {Area}");
+    //    }
+    //}
+    #endregion
     #endregion
     internal class Program
     {
