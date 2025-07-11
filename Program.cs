@@ -1,33 +1,47 @@
 ﻿namespace Assignment_OOP_2
 {
     #region Struct Q1
-   //internal struct Person
-   //{
-   //    public string Name;
-   //    public int Age;
-   //
-   //    public Person(string name, int age)
-   //    {
-   //        Name = name;
-   //        Age = age;
-   //    }
-   //}
+    //internal struct Person
+    //{
+    //    public string Name;
+    //    public int Age;
+    //
+    //    public Person(string name, int age)
+    //    {
+    //        Name = name;
+    //        Age = age;
+    //    }
+    //}
     #endregion
 
     #region Struct Q2
-    internal struct Point
-    {
-        public double X;
-        public double Y;
+    //internal struct Point
+    //{
+    //    public double X;
+    //    public double Y;
+    //
+    //    public Point(double x, double y)
+    //    {
+    //        X = x;
+    //        Y = y;
+    //    }
+    //}
 
-        public Point(double x, double y)
+
+    #endregion
+
+    #region Struct Q3
+    internal struct Person
+    {
+        public string Name;
+        public int Age;
+
+        public Person (string name , int age)
         {
-            X = x;
-            Y = y;
+            Name = name;
+            Age = age;
         }
     }
-
-    
     #endregion
     internal class Program
     {
@@ -63,6 +77,31 @@
             //
             //double Distance = Math.Sqrt(Math.Pow(P2.X - P1.X, 2) + Math.Pow(P2.Y - P1.Y, 2));
             //Console.WriteLine($"The Distance Between The Two Points  = {Distance}");
+            #endregion
+
+            #region Q3
+            //Person[] people = new Person[3];
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine($"Enter Your Details For Person {i + 1} : ");
+            //    Console.WriteLine("Name : ");
+            //    string name = Console.ReadLine();
+            //    Console.WriteLine("Age : ");
+            //    int age = Convert.ToInt32(Console.ReadLine());
+            //    people[i] = new Person (name, age);
+            //    Console.WriteLine();
+            //}
+            //
+            //Person Oldest = people[0];
+            //for (int i = 1; i < people.Length; i++)
+            //{
+            //    if (people[i].Age > Oldest.Age)
+            //    {
+            //        Oldest = people[i];
+            //    }
+            //}
+            //
+            //Console.WriteLine($"The Oldest Person Is : {Oldest.Name} , With Age = {Oldest.Age}");
             #endregion
         }
     }
